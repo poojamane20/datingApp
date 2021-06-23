@@ -1,0 +1,91 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dating Form</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ </head>
+ <link rel="stylesheet" href="datingForm.css">
+ <body>
+     <div class="heading">
+         <h1 style="color: darkred;text-align: center; background-color: darkturquoise;">Dating Form</h1>
+     </div>
+</body>
+
+ <section>
+     <form>
+        
+        <h3 class="personal details">Personal Details</h3>
+        <div>
+        <label for="First Name">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter Enter First Name">
+        <label for="last name">Last Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter Last Name"><br>
+        </div><br>
+
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br><br>
+
+            <label for="tel">Phone Number</label> 
+            <input type="tel" id="tel" pattern="[0-9]{4} [0-9]{3} [0-9]{3} required"><br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other">Other <br><br>
+            <label for="date">Proposal Date</label>
+            <input type="datetime" name="date"><br><br>            <p></p>
+
+                <h3>Select What You Have:</h3><br>
+                <div>
+
+                <label for="tattoos">I have Tattoos or Piercing</label>
+                <input type="checkbox" name="tattoos" value="Yestattoos"><br>
+
+                <label for="older">I am 2 years older than your son/daughter</label>
+                <input type="checkbox" name="older" value="2yearolder"> <br>
+        
+                <label for="car">I own a panel van or Ferrari</label>
+                <input type="checkbox" name="car" value="car"> <br>
+
+                <label for="work">I work full-time</label>
+                <input type="checkbox" name="work" value="fulltimework"><br>
+
+                <label for="rich"> My parents are rich</label>
+                <input type="checkbox" name="rich" value="rich"><br>
+
+                <label for="dateLocation"> Is the date at a private/public location</label>
+                <input type="radio" name="datelocation" value="private">Private 
+                <input type="radio" name="datelocation" value="public">public <br> 
+
+                <label for="education">Education level completed</label>
+                <input type="checkbox" name="education" value="educationCompleted"><br>
+                </div>
+
+                <p></p>
+
+                <label for="essay"><h4>Why do you want to date my daughter (50 words input)?</h4s></label>
+                <input type="text" name="essay" aria-valuemax="essay 50"><br><br>
+
+                <label for="contact"><h4>Please provide 1 contact point for your reference</h4></label><br>
+                <input type="text" name="contact"><label for="Instagram">Instagram</label><br>
+                <input type="text" name="contact"><label for="facebook">Facebook</label><br>
+                <input type="text" name="contact"><label for="snapchat">Snapchat</label><br>
+                <input type="text" name="contact"><label for="twitter">Twitter</label><br>
+                <br><br>
+                <label for="select file">Upload your bank statement:</label><br>
+                <input type="file" name="select file" value="Select a File"><br>
+                <br><br>
+                <label for="submit"></label>
+               
+                <button class="btn btn-primary">
+                    submit
+                    
+                </button>
+
+
+     </form>
+ </section>
+ </html>
